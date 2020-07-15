@@ -1,0 +1,27 @@
+.contact-grid-wrapper{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 100px;
+}
+
+.contact-grid-wrapper > .company-meta-data-sidebar-wrapper > .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.company-meta-data-sidebar-wrapper > .compay-details-wrapper {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 900;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.company-meta-data-sidebar-wrapper > .compay-details-wrapper i {
+    color: #cea135;
+}

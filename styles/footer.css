@@ -1,0 +1,86 @@
+/* web-bottom   */
+
+.web-bottom {
+    background-color: #11122b;
+    color: burlywood;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px; 
+    margin-top: -4px ;
+}
+
+.web-bottom > .center-column > .banner-image img {
+    width: 180px;
+    height: 100%;
+    filter: brightness(50%);
+    opacity: 0.5;
+
+}
+
+.web-bottom > .contact span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    color: #cbcbcb;
+ }
+
+ .web-bottom  > .contact > .hours{
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 0.8em;
+    color: #cea135
+ }
+
+ .web-bottom  > .link  {
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;         
+    margin-top: 10px;
+ }
+
+ .web-bottom  > .link > .navlink  {
+    width: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+ 
+ .web-bottom  > .link > .navlink a {
+    text-decoration: none;
+    transition: 0.5s;
+    text-align: center;
+    color: #cbcbcb;
+ }
+ 
+ .web-bottom  > .link > .navlink a:hover  {
+    color: #cea135;
+    letter-spacing: 1px;
+ }
+
+ .web-bottom  > .social-media {
+    display: flex;
+    justify-content: space-around;                                                                                                                                      t: space-around;
+    align-items: center;
+    margin-top: 50px;
+ }
+
+ .web-bottom  > .social-media a {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #cbcbcb;
+    transition: 1s;
+ }
+
+ .web-bottom  > .social-media a:hover {
+    color: #cea135;
+ }
+
+ .web-bottom  > .Name {
+    margin-top: 20px;
+    color:#cbcbcb;
+    font-size: 0.5em;
+ }
