@@ -28,7 +28,10 @@
     padding: 42px;
 }
 
-.square > .square-text-wrapper h1 {
+.square > .square-text-wrapper a {
+    
+    text-align: center;
     color: #cea135;
     width: 100%;
+    text-decoration: none;
 }

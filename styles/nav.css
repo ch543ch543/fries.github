@@ -5,7 +5,7 @@
     color: burlywood;
     /* Flexbox container */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* padding: 100px;
     padding-top: 50px;
