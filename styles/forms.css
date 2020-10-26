@@ -69,3 +69,14 @@
     visibility: visible;
     transform: translateY(1rem);
 }
+
+@media (max-width: 600px) {
+    .form {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form input, .form textarea, .form .center-bottom-wrapper {
+        padding: 0 0;
+    }
+}

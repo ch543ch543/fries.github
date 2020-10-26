@@ -30,7 +30,7 @@
     color: #cbcbcb;
  }
 
- .web-bottom  > .contact > .hours{
+ .web-bottom  > .contact > .hours, .web-bottom  > .contact > .number{
     font-family: "Ubuntu Condensed", sans-serif;
     font-size: 0.8em;
     color: #cea135
@@ -85,3 +85,23 @@
     color:#cbcbcb;
     font-size: 0.5em;
  }
+
+ @media (max-width: 600px) {
+   .web-bottom {
+      width: 100%;
+      background-color: #11122b;
+      color: burlywood;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: column;
+      height: 320px; 
+  }
+
+   .web-bottom  > .link  {
+      display:none; 
+   }
+ }
+

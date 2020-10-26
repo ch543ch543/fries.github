@@ -6,6 +6,7 @@
 
 .page-container > .content-wrapper{
     width: 1000px;
+    margin-top: 300px;
 }
 
 .page-container > .content-wrapper > #chef {
@@ -18,5 +19,27 @@
 .page-container >.content-wrapper p{
     letter-spacing: 1px;
     line-height: 30px;
+    margin: 0 0 0 0; 
 }
 
+@media (max-width: 600px) {
+
+    .page-container > .content-wrapper{
+        width: 100%;
+        margin-top: 300px;
+        text-align: center;
+    }
+    
+    .page-container > .content-wrapper > #chef {
+        width: 250px;
+        margin: 25px 10px 20px 10px; 
+        float: none;
+        border: 1px solid #cea135; 
+    }
+    
+    .page-container >.content-wrapper p {
+        width: 300px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

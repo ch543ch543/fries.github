@@ -43,32 +43,35 @@
     color: #858585;
     font-size: 0.8em;
 }
-
 /* central column */
 
-.Link-wrapper > .nav-link a{
+.Link-wrapper > a.nav-link {
     font-family: 'Ubuntu Condensed', sans-serif;
+    display: inline;
     color: burlywood;
+    margin-right: 40px; 
+    margin-left: 40px; 
 }
 
 .central-column {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 500px;
 }
 
-.banner-image{
-    display: flex;
-    justify-content: center;
-}
 
 .Link-wrapper{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.banner-image img {
-width:216px; 
-height:100%;
+
+img.banner-image {
+    width: 60%; 
+    height:100%;
 }
 
 .nav-link a {
@@ -127,3 +130,59 @@ height:100%;
  .Navigation-wrapper > .right-column > .contact-icon a:hover {
      color: burlywood;
   }
+
+
+@media (max-width: 600px) {
+    .Navigation-wrapper{
+        height: 100%;
+        background-color: #11122b;
+        color: burlywood;
+        /* Flexbox container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px; */
+        /* padding: 60px 100px 60px 100px; */
+        padding: 10px 10px;
+    }
+    
+    /* left column */
+    
+    .left-column{
+        display:none;
+    }
+    
+    
+    /* central column */
+
+    .central-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Link-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    /* right column */
+    .Navigation-wrapper > .right-column > .address-wrapper {
+        display:none;
+    }
+
+    .Navigation-wrapper > .right-column > .contact-icon a {
+        display:none;
+    }
+    
+    
+}
+

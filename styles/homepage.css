@@ -11,7 +11,7 @@
 }
 
 .hero-section > .top-heading {
-    font-size: 0.9 em;
+    font-size: 1em;
     padding: 1px 20px;
     background-color: #11122b;
     color: #cbcbcb;
@@ -28,53 +28,37 @@
     margin-top: 15px; 
 }
 
-
-/* feature-section */
-/* .feature-section > .colunms-wrapper {
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 0.8em;
-    background-image: url(../images/background/fries-multiply-bg.jpg);
-    color: #11122b;
-    border-top: 10px solid white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 350px;
+@media (max-width: 600px) {
+    .hero-section {
+    
+        background-image: url(../images/background/fries-hero-bg.jpg);
+        padding: 50px;
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .hero-section > .top-heading  {
+        font-size: 0.5em;
+        margin: 0px;
+        padding: 1px 20px;
+        background-color: #11122b;
+        color: #cbcbcb;
+        width: 200px;
+        border-radius: 2px;
+    }
+    
+    .hero-section > .bottom-heading {
+        padding: 1px 20px;
+        background-color:#cea135;
+        color: #11122b;
+        width: 200px;
+        border-radius: 2px;
+        margin-top: 15px; 
+    }
 }
-
-.feature-section > .colunms-wrapper > .column {
-    border-bottom: 5px solid transparent;
-    border-radius: 10px;
-    text-align: center;
-    transition: 1s;
-    width:200px;  
-}
-
-.feature-section > .colunms-wrapper > .column:hover {
-    border-bottom: 5px solid #11122b;
-}
- 
-.feature-section > .colunms-wrapper > .column :nth-child(1) {
-    font-size: 2em;
-}
-
-.feature-section > .colunms-wrapper > .column :nth-child(2) {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 900;
-    transition: 1s;
-}
-
-.feature-section > .colunms-wrapper > .column :nth-child(2):hover {
-    letter-spacing: 0.5px;
-}
-
-.feature-section > .colunms-wrapper > .column :nth-child(3) {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 900;
-    transition: 1s;
-} */
 
 .feature-section {
     width: 100%;
@@ -131,6 +115,26 @@
     letter-spacing: 1px;
 }
 
- 
-
-
+@media(max-width:600px) {
+    .feature-section {
+        width: 100%;
+        height: 100%;
+        background: url(../images/background/fries-multiply-bg.jpg) repeat-x repeat-y center center ;
+        background-color: #cea135;
+        border-top: 10px solid white;
+        color: #11122b;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        font-size: 0.7em;
+        box-shadow: inset 0px -26px 79px -8px rgba(0,0,0, 0.58);
+    }
+    
+    .feature-section > .columns-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}

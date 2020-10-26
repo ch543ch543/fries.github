@@ -3,14 +3,17 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 100px;
+    margin-top: 400px;
 }
 
 .contact-grid-wrapper > .company-meta-data-sidebar-wrapper > .logo img{
-    width: 100%;
+    width: 200px;
     height: 100%;
 }
 
-.company-meta-data-sidebar-wrapper > .compay-details-wrapper {
+
+
+.company-meta-data-sidebar-wrapper > .compay-details > .compay-details-wrapper {
     font-family: "Ubuntu Condensed", sans-serif;
     font-weight: 900;
     font-size: 1.25em;
@@ -22,6 +25,23 @@
     margin-bottom: 20px;
 }
 
-.company-meta-data-sidebar-wrapper > .compay-details-wrapper i {
+.company-meta-data-sidebar-wrapper > .compay-details > .compay-details-wrapper i {
     color: #cea135;
+}
+
+@media(max-width: 600px) {
+    .contact-grid-wrapper{
+        width: 1000px;
+        display: block;
+        margin-top: 400px;
+    }
+    .company-meta-data-sidebar-wrapper  {
+       width: 300px;
+       margin-left: auto;
+       margin-right: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
 }

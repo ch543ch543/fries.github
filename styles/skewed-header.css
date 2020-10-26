@@ -1,4 +1,4 @@
-/* Skewed header */
+nav-link/* Skewed header */
 .skewed-header {
     position: relative;
     height: 400px;
@@ -43,4 +43,13 @@
     padding: 10px;
     text-align: center;
 } 
+
+@media (max-width: 600px) {
+    .skewed-header > .header-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform: skewY(-10deg);
+    }
+}
 
